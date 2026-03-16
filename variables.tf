@@ -8,7 +8,7 @@ variable instance_type{
   description = "this is the instance type used for ec2 creation"
 
   validation {
-    condition = contains([t3.micro, t3.small, t3.medium], instance_type)
+    condition = contains(["t3.micro", "t3.small", "t3.medium"], instance_type)
     error_message = "please select t3.micro or t3.small or t3.medium"
   }
 }
