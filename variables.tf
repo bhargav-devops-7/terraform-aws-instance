@@ -1,9 +1,9 @@
-variable ami_id {
+variable "ami_id" {
   type        = string
   description = "this is the AMI ID used for instance creation"
 }
 
-variable instance_type {
+variable "instance_type" {
   type = string
   description = "this is the instance type used for ec2 creation"
 
@@ -13,11 +13,11 @@ variable instance_type {
   }
 }
 
-variable sg_ids {
+variable "sg_ids" {
   type = list
 }
 
-variable ec2_tags{
+variable "ec2_tags" {
   type = map
   default = {}
 }
