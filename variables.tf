@@ -17,7 +17,7 @@ variable "sg_ids" {
   type = list
 }
 
-variable "ec2_tags" {
+variable "tags" {
   type = map
   default = {}
 }
