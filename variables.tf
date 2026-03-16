@@ -3,7 +3,7 @@ variable ami_id {
   description = "this is the AMI ID used for instance creation"
 }
 
-variable instance_type{
+variable instance_type {
   type = string
   description = "this is the instance type used for ec2 creation"
 
